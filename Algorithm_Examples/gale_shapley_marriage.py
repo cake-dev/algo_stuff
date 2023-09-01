@@ -4,7 +4,7 @@ def gale_shapley(men_prefs, women_prefs):
     free_men = list(men_prefs.keys())
     
     while free_men:  # While there are free men
-        # Choose a free man 'm'
+        # Choose a free man m
         m = free_men[0]
         
         # Get m's preference list
