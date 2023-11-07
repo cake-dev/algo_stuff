@@ -1,3 +1,6 @@
+# AUTHOR: Jake Bova
+# DATE LAST MODIFIED: 11/05/2023
+# DESCRIPTION: This file contains the tests for the MST Kruskals assignment.
 import numpy as np
 from MST import kruskalClass
 

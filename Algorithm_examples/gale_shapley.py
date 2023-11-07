@@ -58,7 +58,7 @@ women_prefs = {
     'w3': ['m3', 'm1', 'm2']
 }
 
-# Run the Gale-Shapley algorithm
+# Run the algorithm
 result = gale_shapley(men_prefs, women_prefs)
 print("Engaged pairs:", result)
 

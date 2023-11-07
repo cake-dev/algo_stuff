@@ -158,8 +158,8 @@ class kruskalClass:
         - u : dictionary
             The updated union-find data structure after the union operation.
         """
-        # check sizes of s1 and s2 to ensure correct representative
-        if u[s1][1] < u[s2][1] or (u[s1][1] == u[s2][1] and s1 > s2): # choose larger set or smaller representative if sizes are equal
+        # Check sizes of s1 and s2 to ensure correct representative
+        if u[s1][1] < u[s2][1] or (u[s1][1] == u[s2][1] and s1 > s2): # Choose larger set or smaller representative if sizes are equal
             s1, s2 = s2, s1
         for key in u:
             if u[key][0] == s2:
