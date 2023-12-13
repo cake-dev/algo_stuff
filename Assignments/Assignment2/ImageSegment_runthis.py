@@ -60,6 +60,7 @@ image_file = image_file[:, :, :3]
 image = image_file
 
 def manual_select_foreground_background(image):
+    # Translated from https://usermanual.wiki/Pdf/Manual13201803.1541818432.pdf
     fig = plt.figure()
     fig.suptitle('Select Foreground and Background Points')
     ax = fig.add_subplot(111)
@@ -100,7 +101,7 @@ print('x_b_point: ', x_b_point)
 
 # Example usage
 ff_segment_class = SegmentationClass()
-ff_segment_class.set_hyperparameters(p0=10, x_a=x_a_point, x_b=x_b_point) # MANUALLY ENTER POINT HERE IF GUI NOT WORKING
+ff_segment_class.set_hyperparameters(p0=10, x_a=x_a_point, x_b=x_b_point) # MANUALLY ENTER POINT HERE IF GUI NOT WORKING (OR RUN SIMPLE_IMAGESEGMENT.PY)
 
 A = ff_segment_class.construct_adjacency_matrix(image)
 
